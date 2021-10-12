@@ -17,6 +17,31 @@ include __DIR__ . "/php/database.php";
 </head>
 <body>
 
+       
+
+
+    <div class="container">
+
+        <?php foreach ($db as $disk) { ?>
+
+            <div class="disk">
+
+                <div class="img_cont">
+
+                    <img src="<?php echo $disk["poster"]?>" alt="album image">
+                    
+                </div>    
+
+                <?php echo "TITLE: " . $disk["title"] . " <br/> ";?>
+                <?php echo "AUTHOR: " . $disk["author"] . " <br/> ";?>
+                <?php echo "GENRE: " . $disk["genre"] . " <br/> ";?>
+                <?php echo "YEAR: " . $disk["year"] . " <br/> ";?>
+
+            </div>
+
+        <?php } ?>
+        
+    </div>
 
     
 </body>
