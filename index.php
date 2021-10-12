@@ -1,3 +1,11 @@
+<?php
+
+include __DIR__ . "/php/database.php";
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +17,7 @@
 </head>
 <body>
 
-   
+
     
 </body>
 </html>
